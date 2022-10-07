@@ -3,7 +3,7 @@ body {
     padding: 0px !important;
 }
 
-header {
+header.header_main {
     /* background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_1.jpg"), no-repeat center; */
     background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
     background-position: center;
@@ -11,6 +11,12 @@ header {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    padding: 2em 4em 2em 4em;
+}
+
+header.header_page {
+    background-color: #0F0F2E;
     text-align: center;
     padding: 2em 4em 2em 4em;
 }
@@ -29,6 +35,10 @@ nav {
 .menu_nav a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.power_memory {
+    font-size: 1.5em;
 }
 
 h1 {
@@ -63,4 +73,75 @@ h2 {
     display: inline-block;
     font-size: 16px;
     margin-bottom: 5%;
-  }
+}
+
+/* HEADER PAGE */
+
+.titre_background {
+    /* background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center; */
+    /* background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    text-align: center;
+    padding: 2em 4em 2em 4em;
+}
+
+.h1_page {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 5em;
+}
+
+#titre_page {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* background per page */
+
+.register_background {
+    background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.memory_background {
+    background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_background {
+    background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scores_background {
+    background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact_background {
+    background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
