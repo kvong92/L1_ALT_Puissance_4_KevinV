@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
-<body>
-   
-<div class="contact">
-    <h1>Contactez nous</h1>
-</div>
- 
-<section class="page">
-     <!--container-->
-     <div class="card-containers">
-        <div class="card">
-            <div class="container">
-            <!--block-1-->
-            <h4><b>contact :</b></h4>
-            <img src="/Users/admin/Documents/projet_P4/L1_ALT_Puissance_4_KevinV/assets/image/bx-phone.svg">
-            <p>09.87.76.75.65</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="container">
-            <!--block-2-->
-            <h4><b>email :</b></h4>
-            <img src="/Users/admin/Documents/projet_P4/L1_ALT_Puissance_4_KevinV/assets/image/bx-envelope.svg">
-            <p>hioherz@gmail.com</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="container">
-            <!--block-3-->
-            <h4><b>adresse :</b></h4>
-            <img src="/Users/admin/Documents/projet_P4/L1_ALT_Puissance_4_KevinV/assets/image/bx-home.svg">
-            <p>678 Rue quelque par :</p>
-            </div>
-        </div>
-    </div>
-<div class="corps-formulaire">
-    <form>
-        
-            <p>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name" placeholder="Nom">
-            </p>
-            <p>
-                <label for="mail">e-mail:</label>
-                <input type="email" id="mail" name="user_mail" placeholder="E-mail">
-            </p>
-            
-            <p>
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-                <option value="france">France</option>
-                </select>
-            </p>
-            
-            <p>  
-                <label id="message" for="msg">Message :</label>
-                <textarea name="" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
-            </p>
-            <p class="button">
-                <button type="submit">Envoyer le message</button>
-            </p>
 
-    </form>
-</div>
-   
-</section>
+<body>
+
+ 
+
+    <section class="page">
+        <!--container-->
+        <div class="card-containers">
+            <div class="card">
+                <div class="container">
+                    <!--block-1-->
+                    <h4><b>contact :</b></h4>
+                    <img src="/Users/admin/Documents/projet_P4/L1_ALT_Puissance_4_KevinV/assets/image/bx-phone.svg">
+                    <p>09.87.76.75.65</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <!--block-2-->
+                    <h4><b>email :</b></h4>
+                    <img src="/Users/admin/Documents/projet_P4/L1_ALT_Puissance_4_KevinV/assets/image/bx-envelope.svg">
+                    <p>hioherz@gmail.com</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <!--block-3-->
+                    <h4><b>adresse :</b></h4>
+                    <img src="/Users/admin/Documents/projet_P4/L1_ALT_Puissance_4_KevinV/assets/image/bx-home.svg">
+                    <p>678 Rue quelque par :</p>
+                </div>
+            </div>
+        </div>
+        <div class="corps-formulaire">
+            <form>
+
+                <p>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name" placeholder="Nom">
+                </p>
+                <p>
+                    <label for="mail">e-mail:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="E-mail">
+                </p>
+
+                <p>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="france">France</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="sujet">sujet:</label>
+                    <input type="sujet" id="sujet" name="sujet" placeholder="sujet">
+                </p>
+
+                <p>
+                    <label id="message" for="msg">Message :</label>
+                    <textarea name="" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit">Envoyer le message</button>
+                </p>
+
+            </form>
+        </div>
+
+    </section>
 </body>
+
 </html>
