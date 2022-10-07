@@ -14,7 +14,11 @@ body{
 }
 
 form{
+<<<<<<< HEAD
     background-color: #0F0F2E;
+=======
+    background-color: rgba(255, 255, 255, 0.869);
+>>>>>>> d8b5c55ebadc37317ed4949e81b3f11827e5a46c
     width: 400px;
     margin-left: 145px;
     text-align: left;
@@ -68,6 +72,7 @@ form h1{
 .page{
     display: flex;
 flex-direction: column;
+<<<<<<< HEAD
 }
 
 #msg {
@@ -103,4 +108,6 @@ background-color: #021846 ;
 
 .corps-formulaire input::placeholder {
     color: white;
+=======
+>>>>>>> d8b5c55ebadc37317ed4949e81b3f11827e5a46c
 }
