@@ -1,15 +1,4 @@
-
-
-.contact {
-    background-image: url(../image/contact.jpeg);
-    color: white;
-    text-align: center;
-    padding: 37px;
-    margin-top: 60px;
-}
-
 form{
-    background-color: #0F0F2E;
     width: 400px;
     margin-left: 145px;
     text-align: left;
@@ -62,11 +51,15 @@ form h1{
 
 .page{
     display: flex;
-flex-direction: column;
-<<<<<<< HEAD
+    flex-direction: column;
 }
 
 #msg {
+    background-color: #021846 ;
+    color: white;
+}
+
+#sujet{
     background-color: #021846 ;
     color: white;
 }
