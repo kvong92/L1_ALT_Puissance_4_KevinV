@@ -51,8 +51,7 @@ form h1{
 
 .page{
     display: flex;
-flex-direction: column;
-<<<<<<< HEAD
+    flex-direction: column;
 }
 
 #msg {
