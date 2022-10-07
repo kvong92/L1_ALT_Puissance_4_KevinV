@@ -1,9 +1,4 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #0F0F2E;
-    font-weight: bold;
-}
+
 
 .contact {
     background-image: url(../image/contact.jpeg);
@@ -14,7 +9,7 @@ body{
 }
 
 form{
-    background-color: rgba(255, 255, 255, 0.869);
+    background-color: #0F0F2E;
     width: 400px;
     margin-left: 145px;
     text-align: left;
@@ -68,4 +63,40 @@ form h1{
 .page{
     display: flex;
 flex-direction: column;
+<<<<<<< HEAD
+}
+
+#msg {
+    background-color: #021846 ;
+    color: white;
+}
+
+#country{
+    background-color: #021846 ;
+    color: white;
+}
+
+#mail {
+background-color: #021846 ;
+color: white;
+border: none;
+outline: none;
+}
+
+#name {
+background-color: #021846 ;
+}
+
+.corps-formulaire label {
+    color: white;
+}
+
+.corps-formulaire input {
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.corps-formulaire input::placeholder {
+    color: white;
 }
