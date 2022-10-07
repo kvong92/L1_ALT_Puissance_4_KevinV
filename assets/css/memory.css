@@ -1,11 +1,3 @@
-#body_memory {
-  background-color: #0F0F2E;
-  margin: 150px 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #table_memory_5x5 {
   display: flex;
   justify-content: center;
