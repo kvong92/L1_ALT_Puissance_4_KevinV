@@ -60,11 +60,15 @@ form h1{
 
 .page{
     display: flex;
-flex-direction: column;
-<<<<<<< HEAD
+    flex-direction: column;
 }
 
 #msg {
+    background-color: #021846 ;
+    color: white;
+}
+
+#sujet{
     background-color: #021846 ;
     color: white;
 }
