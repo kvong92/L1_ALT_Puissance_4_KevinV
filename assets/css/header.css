@@ -145,3 +145,12 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.myaccount_background {
+    background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
