@@ -2,109 +2,163 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Link to style.css  background color -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Link to memory.css -->
-    <link rel="stylesheet" href="assets/css/memory.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Link to style.css  background color -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Link to memory.css -->
+  <link rel="stylesheet" href="assets/css/memory.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <!-- Librarie Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <header class="header_page">
+    <section class="menu_nav">
 
-    <h1>Memory Game</h1>
-    <!-- Affichage tableau 5x5 memory game grid -->
-    <table id="table_memory_5x5">
-        <tbody>
-            <tr class="table_row">
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-            </tr>
-            <tr class="table_row">
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-            </tr>
+      <div class="power_memory">The Power of Memory</div>
 
-            <tr class="table_row">
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-            </tr>
+      <nav>
+        <a href="./index.html">ACCUEIL</a>
+        <a href="./memory.html">JEU</a>
+        <a href="./scores.html">SCORES</a>
+        <a href="./contact.html">NOUS CONTACTER</a>
+      </nav>
+    </section>
+  </header>
 
-            <tr class="table_row">
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-            </tr>
+  <section class="titre_background memory_background">
+    <section id="titre_page">
+      <h1 class="h1_page">MEMORY GAME</h1>
+    </section>
+  </section>
 
-            <tr class="table_row">
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-                <td class="table_case"></td>
-            </tr>
-        </tbody>
-    </table>
+  <h2 id="h2_difficulte">DIFFICULTÉ</h2>
 
-    <div class="chat_container">
-        <h2>Chat</h2>
-      
-        <div class="chat_box">
-          <p class="from-them">Lorem ipsum dolor sit amet.</p>
-          <p class="from-me">Lorem ipsum dolor sit amet.</p>
-          <p class="from-them">Lorem ipsum dolor sit amet.</p>
-          <p class="from-me">Lorem ipsum dolor sit amet.</p>
-        </div>
+  <section class="choose_difficulty">
+    <a href="#">
+      <button class="button_difficulty">Facile</button>
+    </a>
+
+    <a href="#">
+      <button class="button_difficulty">Intermédiaire</button>
+
+    </a>
+
+    <a href="#">
+      <button class="button_difficulty">Expert</button>
+    </a>
+
+    <a href="#">
+      <button class="button_difficulty">Impossible</button>
+    </a>
+  </section>
+
+  <h2>Facile : 5x5</h2>
+
+  <!-- Affichage tableau 5x5 memory game grid -->
+  <table id="table_memory_5x5">
+    <tbody>
+      <tr class="table_row">
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+      </tr>
+      <tr class="table_row">
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+      </tr>
+
+      <tr class="table_row">
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+      </tr>
+
+      <tr class="table_row">
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+      </tr>
+
+      <tr class="table_row">
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+        <td class="table_case"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="chat_container">
+    <h3>Chat</h3>
+
+    <div class="chat_box">
+      <div class="from-them">Lorem ipsum dolor sit amet.</div>
+      <div class="from-me">Lorem ipsum dolor sit amet.</div>
+      <div class="from-them">Lorem ipsum dolor sit amet.</div>
+      <div class="from-me">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </div>
+
+  <footer>
+    <section id="information">
+      <div id="titre_info">Information</div>
+      <div class="text_info">Lorem ipsum dolor sit amet, consectetur elit.</div>
+      <section class="tel_email_location">
+        <div class="label_info">Tel: </div>
+        <div class="text_info">01 23 45 67 89</div>
+      </section>
+
+      <section class="tel_email_location">
+        <div class="label_info">Email: </div>
+        <div class="text_info">support@powerofmemory.com</div>
+      </section>
+
+      <section class="tel_email_location">
+        <div class="label_info">Location: </div>
+        <div class="text_info">Paris</div>
+      </section>
+
+      <div class="icon_social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-github"></a>
       </div>
+    </section>
 
-    <!-- <div id="chat">
-        <h2>Chat</h2>
-        <img id="img_equipe_separator" src="assets/images/separator-orange.png" alt="separator">
-        <div class="message">
-            <img src="https://placekitten.com/255/255" alt="Avatar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <span class="time-right">11:00</span>
-          </div>
-          
-          <div class="message dark">
-            <img src="https://placekitten.com/255/255" alt="Avatar" class="right">
-            <p>Lorem ipsum dolor sit.</p>
-            <span class="time-left">11:01</span>
-          </div>
-          
-          <div class="message">
-            <img src="https://placekitten.com/255/255" alt="Avatar">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, obcaecati?</p>
-            <span class="time-right">11:02</span>
-          </div>
-          
-          <div class="message dark">
-            <img src="https://placekitten.com/255/255" alt="Avatar" class="right">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptate, reprehenderit unde id at eveniet optio aut.</p>
-            <span class="time-left">11:05</span>
-          </div>
-
-        <textarea name="msg" id="message_area" rows="5"></textarea>
-        <button class="button_envoyer" type="button">
-            Envoyer
-        </button>
-        </textarea>
-
-    </div> -->
+    <section id="menu_nav_footer">
+      <div id="titre_info">Power Of Memory</div>
+      <ul>
+        <li>
+          <a href="./memory.html">Jouer</a>
+        </li>
+        <li>
+          <a href="./scores.html">Les scores</a>
+        </li>
+        <li>
+          <a href="./contact.html">Nous contacter</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
 
 </body>
 
