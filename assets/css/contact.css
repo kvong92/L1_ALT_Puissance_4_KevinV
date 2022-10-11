@@ -1,8 +1,8 @@
 form{
     width: 400px;
-    margin-left: 145px;
+    /* margin-left: 145px; */
     text-align: left;
-    margin-top: -140px;
+    /* margin-top: -140px; */
 }
 
 input::placeholder {
@@ -31,19 +31,20 @@ form h1{
 .corps-formulaire{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    margin-top: px;
-    
+    justify-content: left;
+    row-gap: 15px;
 }
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: white;
-    margin: 10%;
+    /* margin: 10%; */
     border-radius: 20px; 
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     color: #000000;
+    padding: 30px 50px 30px 50px;
+    background-color: #0D0A26;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -53,19 +54,28 @@ form h1{
   
   /* Add some padding inside the card container */
   .container {
-    padding: 10px 25px;
+    padding: 30px 60px 30px 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+    /* background-color: #0D0A26; */
   }
 
 .card-containers{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .page{
     display: flex;
     flex-direction: column;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #msg {
@@ -108,11 +118,22 @@ background-color: #021846 ;
     color: white;
 }
 
-.button{
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
-    width: 125px;
-    height: 20px;
+
+.container i {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;   
+    font-size: 30px;
+    color: #fff;
+}
+
+.container a{
+    text-decoration: none;
+    color: #B3ADCA;
+    font-size: 20PX;
 }
