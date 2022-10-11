@@ -1,75 +1,91 @@
-form{
-    width: 400px;
-    /* margin-left: 145px; */
+/* form{
+    width: 40%;
+    margin-left: 145px;
     text-align: left;
-    /* margin-top: -140px; */
-}
+    margin-top: -140px;
+} */
 
 input::placeholder {
-    color: rgb(0, 26, 192);
+    /* color: rgb(0, 26, 192); */
 }
 
 input [name-name]::placeholder {
-    color: blue;
+    /* color: blue; */
 }
 
-form h1{
+form h1 {
     font-size: 40px;
 }
 
-.formulaire_block_1{
+.formulaire_block_1 {
     display: flex;
     justify-content: space-between;
-    column-gap: 5px;
+    column-gap: 15px;
 }
 
-.block_space{
+.block_space {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
-    height: 50px;
 }
 
-.corps-formulaire{
+.block_space::placeholder {
+    padding-left: 10px
+}
+
+textarea {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    border-width: 0;
+}
+
+.corps-formulaire {
     display: flex;
     flex-direction: column;
     justify-content: left;
     row-gap: 15px;
+    width: 40%;
 }
+
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     background-color: white;
     /* margin: 10%; */
-    border-radius: 20px; 
+    border-radius: 20px;
     /* margin-bottom: 200px; */
     color: #000000;
     padding: 30px 50px 30px 50px;
     background-color: #0D0A26;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
     padding: 30px 60px 30px 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
     row-gap: 40px;
     /* background-color: #0D0A26; */
-  }
+}
 
-.card-containers{
+.card-containers {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.page{
+.page {
     display: flex;
     flex-direction: column;
     margin-left: 7%;
@@ -79,43 +95,44 @@ form h1{
 }
 
 #msg {
-    background-color: #021846 ;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* color: white; */
 }
 
-#sujet{
-    background-color: #021846 ;
-    color: white;
+#sujet {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* color: white; */
 }
 
-#country{
-    background-color: #021846 ;
-    color: white;
+#country {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* color: white; */
 }
 
 #mail {
-background-color: #021846 ;
-color: white;
-border: none;
-outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* color: white; */
+    border: none;
+    outline: none;
 }
 
 #name {
-background-color: #021846 ;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .corps-formulaire label {
-    color: white;
+    /* color: white; */
 }
 
 .corps-formulaire input {
-    color: white;
+    /* color: white; */
     border: none;
     outline: none;
 }
 
 .corps-formulaire input::placeholder {
-    color: white;
+    /* color: white; */
+    padding-left: 10px;
 }
 
 
@@ -127,13 +144,23 @@ background-color: #021846 ;
     vertical-align: center;
     line-height: 60px;
     width: 60px;
-    height: 60px;   
+    height: 60px;
     font-size: 30px;
     color: #fff;
 }
 
-.container a{
+.container a {
     text-decoration: none;
     color: #B3ADCA;
     font-size: 20PX;
+}
+
+.container a:hover {
+    color: #EC9222;
+}
+
+.button_envoyer {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 75%;
 }
