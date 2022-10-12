@@ -1,11 +1,20 @@
-.content_register {
+.content_myaccount {
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* column-gap: 10px; */
 }
 
-#login {
+.block_form {
+    width: 40%;
+    text-align: center;
+}
+
+.block_form form {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -13,7 +22,7 @@
     margin-bottom: 20px;
 }
 
-.content_register > #login input {
+form input {
     padding: 15px 0px 15px 1em;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: transparent;
@@ -25,7 +34,17 @@
     padding: 1em;
 }
 
-#button_connexion {
+.button_confirmer {
     display: flex;
     justify-content: flex-start;
+}
+
+.title_myaccount {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.block_form img {
+    width: 70%;
 }

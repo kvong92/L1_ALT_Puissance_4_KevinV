@@ -16,3 +16,21 @@ button {
     font-size: 16px;
     margin-bottom: 5%;
 }
+
+button:hover {
+    background-color: #ec912295;
+}
+
+nav a:hover {
+    color: #EC9222;
+}
+
+nav a:active {
+    color: #EC9222;
+}
+
+/* .on_link {
+    color: #EC9222; 
+    text-decoration: underline #EC9222;
+    text-underline-offset: 2px;
+} */
