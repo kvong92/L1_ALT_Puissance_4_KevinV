@@ -19,10 +19,12 @@
     <header class=header_main>
         <section class="menu_nav">
 
-            <div class="power_memory">The Power of Memory</div>
-            
+            <div class="power_memory">
+                <a href="./">The Power of Memory</a>
+            </div>
+
             <nav>
-                <a style="color: #EC9222;" href="./index.php">ACCUEIL</a>
+                <a href="./">ACCUEIL</a>
                 <a href="./memory.php">JEU</a>
                 <a href="./scores.php">SCORES</a>
                 <a href="./contact.php">NOUS CONTACTER</a>
@@ -43,15 +45,16 @@
             </a>
         </section>
     </header>
-    
+
+
     <!-- 1er container : 3 images +  3 textes -->
-    <section id="main_all_content">
+    <section class="content_main">
         <section class="main_container">
             <!-- Block 1 : 3 images -->
             <div class="images_block">
-                <img class=images_top src="https://placekitten.com/600/350" alt="img_600x350">
-                <img class=images_top src="https://placekitten.com/300/350" alt="img_300x350">
-                <img class=images_top src="https://placekitten.com/300/350" alt="img_300x350">
+                <img class=images_top src="https://placekitten.com/550/300" alt="img_600x350">
+                <img class=images_top src="https://placekitten.com/280/300" alt="img_300x350">
+                <img class=images_top src="https://placekitten.com/280/300" alt="img_300x350">
             </div>
             <!-- Block 2.1 : nombre + titre + text -->
             <section class="nb-text_block">
@@ -91,7 +94,7 @@
         <section id="img_block">
             <!-- Block 1 : image -->
             <div>
-                <img src="https://placekitten.com/750/380" alt="img_450x380">
+                <img src="https://placekitten.com/700/370" alt="img_450x380">
             </div>
             <!-- Block 2 : 2 block stats bleu/vert-->
             <section id="block_four_images">
@@ -168,50 +171,7 @@
         </section>
     </section>
 
-    <footer>
-        <section id="information">
-            <div id="titre_info">Information</div>
-            <div class="text_info">Lorem ipsum dolor sit amet, consectetur elit.</div>
-            <section class="tel_email_location">
-                <div class="label_info">Tel: </div>
-                <div class="text_info">01 23 45 67 89</div>
-            </section>
-
-            <section class="tel_email_location">
-                <div class="label_info">Email: </div>
-                <div class="text_info">support@powerofmemory.com</div>
-            </section>
-
-            <section class="tel_email_location">
-                <div class="label_info">Location: </div>
-                <div class="text_info">Paris</div>
-            </section>
-
-            <div class="icon_social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-github"></a>
-            </div>
-        </section>
-
-        <section id="menu_nav_footer">
-            <div id="titre_info">Power Of Memory</div>
-            <ul>
-                <li>
-                    <a href="./memory.html">Jouer</a>
-                </li>
-                <li>
-                    <a href="./scores.html">Les scores</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Nous contacter</a>
-                </li>
-            </ul>
-        </section>
-    </footer>
-
+    <?php require('./view/footer.inc.php'); ?>
 </body>
 
 </html>

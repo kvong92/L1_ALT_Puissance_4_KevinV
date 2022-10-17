@@ -2,13 +2,13 @@
   <section class="menu_nav">
     <div class="power_memory">The Power of Memory</div>
     <nav>
-      <a href="./index.html">ACCUEIL</a>
-      <a href="./memory.html">JEU</a>
-      <a href="./scores.html">SCORES</a>
-      <a href="./contact.html">NOUS CONTACTER</a>
-      <a style="color: #EC9222;" href="./register.html">INSCRIPTION</a>
-      <a href="./login.html">CONNEXION</a>
-      <a href="./myaccount.html">MON COMPTE</a>
+      <a href="./">ACCUEIL</a>
+      <a href="./memory.php">JEU</a>
+      <a href="./scores.php">SCORES</a>
+      <a href="./contact.php">NOUS CONTACTER</a>
+      <a href="./register.php">INSCRIPTION</a>
+      <a href="./login.php">CONNEXION</a>
+      <a href="./myaccount.php">MON COMPTE</a>
     </nav>
   </section>
 </header>
