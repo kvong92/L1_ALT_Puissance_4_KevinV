@@ -162,6 +162,9 @@ WHERE email = @current_mail AND user_password = @current_password;
 --                                                                               --
 -- ----------------------------------------------------------------------------- --
 
+INSERT INTO game (game_name) VALUES
+('The Power Of Memory');
+
 -- ----------------------------------------------------------------------------- --
 --                                                                               --
 --                                  6ème story                                   --
@@ -170,3 +173,10 @@ WHERE email = @current_mail AND user_password = @current_password;
 
 SELECT game_name
 FROM game
+
+-- ----------------------------------------------------------------------------- --
+--                                                                               --
+--                                  7ème story                                   --
+--                                                                               --
+-- ----------------------------------------------------------------------------- --
+
