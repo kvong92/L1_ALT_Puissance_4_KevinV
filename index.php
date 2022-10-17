@@ -22,7 +22,7 @@
             <div class="power_memory">The Power of Memory</div>
             
             <nav>
-                <a style="color: #EC9222;" href="./index.html">ACCUEIL</a>
+                <a style="color: #EC9222;" href="./index.php">ACCUEIL</a>
                 <a href="./memory.php">JEU</a>
                 <a href="./scores.php">SCORES</a>
                 <a href="./contact.php">NOUS CONTACTER</a>
@@ -38,11 +38,12 @@
 
             <p id="text_main">Venez challenger les cerveaux les plus agiles</p>
 
-            <a href="./memory.html">
+            <a href="./memory.php">
                 <button id="button_jouer">JOUER !</button>
             </a>
         </section>
     </header>
+    
     <!-- 1er container : 3 images +  3 textes -->
     <section id="main_all_content">
         <section class="main_container">

@@ -17,31 +17,13 @@
 </head>
 
 <body>
+    <?php require('./view/header.inc.php'); ?>
 
-    <header class="header_page">
-        <section class="menu_nav">
-    
-          <div class="power_memory">The Power of Memory</div>
-          
-          <nav>
-            <a href="./index.php">ACCUEIL</a>
-            <a href="./memory.php">JEU</a>
-            <a href="./scores.php">SCORES</a>
-            <a style="color: #EC9222;" href="./contact.php">NOUS CONTACTER</a>
-            <a href="./register.php">INSCRIPTION</a>
-            <a href="./login.php">CONNEXION</a>
-            <a href="./myaccount.php">MON COMPTE</a>
-          </nav>
-        </section>
-      </header>
-    
-      <section class="titre_background contact_background">
+    <section class="titre_background contact_background">
         <section id="titre_page">
-          <h1 class="h1_page">CONTACT</h1>
+             <h1 class="h1_page">CONTACT</h1>
         </section>
-      </section>
-
-
+    </section>
 
     <section class="page">
         <!--container-->

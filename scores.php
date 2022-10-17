@@ -15,34 +15,19 @@
 </head>
 
 <body>
-    <header class="header_page">
-        <section class="menu_nav">
-    
-          <div class="power_memory">The Power of Memory</div>
-          
-          <nav>
-            <a href="./index.html">ACCUEIL</a>
-            <a href="./memory.html">JEU</a>
-            <a style="color: #EC9222;" href="./scores.html">SCORES</a>
-            <a href="./contact.html">NOUS CONTACTER</a>
-            <a href="./register.html">INSCRIPTION</a>
-            <a href="./login.html">CONNEXION</a>
-            <a href="./myaccount.html">MON COMPTE</a>
-          </nav>
-        </section>
-      </header>
-    
-      <section class="titre_background scores_background">
+    <?php require('./view/header.inc.php'); ?>
+
+    <section class="titre_background scores_background">
         <section id="titre_page">
-          <h1 class="h1_page">SCORES</h1>
+            <h1 class="h1_page">SCORES</h1>
         </section>
-      </section>
+    </section>
 
     <section class="content_scores">
         <table class="tableau-style">
-           
+
             <thead>
-                <tr> 
+                <tr>
                     <td>Nom du jeu</td>
                     <td>Pseudo</td>
                     <td>Niveau</td>
@@ -79,7 +64,7 @@
                     <td>S</td>
                     <td>23/08/2022</td>
                 </tr>
-            
+
             </tbody>
 
         </table>

@@ -15,23 +15,7 @@
 </head>
 
 <body>
-
-    <header class="header_page">
-        <section class="menu_nav">
-
-            <div class="power_memory">The Power of Memory</div>
-
-            <nav>
-                <a href="./index.html">ACCUEIL</a>
-                <a href="./memory.html">JEU</a>
-                <a href="./scores.html">SCORES</a>
-                <a href="./contact.html">NOUS CONTACTER</a>
-                <a href="./register.html">INSCRIPTION</a>
-                <a href="./login.html">CONNEXION</a>
-                <a style="color: #EC9222;" href="./myaccount.html">MON COMPTE</a>
-            </nav>
-        </section>
-    </header>
+    <?php require('./view/header.inc.php'); ?>
 
     <section class="titre_background myaccount_background">
         <section id="titre_page">
@@ -46,12 +30,9 @@
             <img src="./assets/image/separator-orange.png" alt="separator-orange">
             <form id="form_mail">
                 <input class="input_classic" type="email" id="old_mail" name="old_user_mail" placeholder="Ancien email">
-                <input class="input_classic" type="email" id="new_mail" name="new_user_mail"
-                    placeholder="Nouveau email">
-                <input class="input_classic" type="password" id="current_password" name="current_password"
-                    placeholder="Mot de passe">
-                <input class="input_classic" type="password" id="current_password" name="current_password"
-                    placeholder="Confirner mot de passe">
+                <input class="input_classic" type="email" id="new_mail" name="new_user_mail" placeholder="Nouveau email">
+                <input class="input_classic" type="password" id="current_password" name="current_password" placeholder="Mot de passe">
+                <input class="input_classic" type="password" id="current_password" name="current_password" placeholder="Confirner mot de passe">
             </form>
             <button class="button_confirmer" type="submit" form="form_mail" value="submit">Confirmer</button>
         </section>
@@ -60,12 +41,9 @@
             <h2 class="title_myaccount">Changer de mot de passe</h2>
             <img src="./assets/image/separator-orange.png" alt="separator-orange">
             <form id="form_password">
-                <input class="input_classic" type="password" id="current_password" name="current_password"
-                    placeholder="Ancien mot de passe">
-                <input class="input_classic" type="password" id="new_password" name="new_password"
-                    placeholder="Nouveau mot de passe">
-                <input class="input_classic" type="password" id="new_password" name="new_password"
-                    placeholder="Confirner le nouveau mot de passe">
+                <input class="input_classic" type="password" id="current_password" name="current_password" placeholder="Ancien mot de passe">
+                <input class="input_classic" type="password" id="new_password" name="new_password" placeholder="Nouveau mot de passe">
+                <input class="input_classic" type="password" id="new_password" name="new_password" placeholder="Confirner le nouveau mot de passe">
             </form>
             <button class="button_confirmer" type="submit" form="form_password" value="submit">Confirmer</button>
         </section>

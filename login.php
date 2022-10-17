@@ -15,37 +15,22 @@
 </head>
 
 <body>
-    <header class="header_page">
-        <section class="menu_nav">
+    <?php require('./view/header.inc.php'); ?>
     
-          <div class="power_memory">The Power of Memory</div>
-          
-          <nav>
-            <a href="./index.html">ACCUEIL</a>
-            <a href="./memory.html">JEU</a>
-            <a href="./scores.html">SCORES</a>
-            <a href="./contact.html">NOUS CONTACTER</a>
-            <a href="./register.html">INSCRIPTION</a>
-            <a style="color: #EC9222;" href="./login.html">CONNEXION</a>
-            <a href="./myaccount.html">MON COMPTE</a>
-          </nav>
-        </section>
-      </header>
-    
-      <section class="titre_background register_background">
+    <section class="titre_background register_background">
         <section id="titre_page">
-          <h1 class="h1_page">CONNEXION</h1>
+            <h1 class="h1_page">CONNEXION</h1>
         </section>
-      </section>
+    </section>
 
     <section class="content_login">
 
         <form id="login">
-            
+
             <input class="input_class" type="text" placeholder="Email" id="email">
             <input class="input_class" type="password" placeholder="Mot de passe" id="password">
         </form>
-        
+
         <button id="button_login">Connexion</button>
 
     </section>
