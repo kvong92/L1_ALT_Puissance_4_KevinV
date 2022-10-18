@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,16 +27,13 @@
 
     <section class="content_register">
 
-        <form id="login">
-
-            <input class="input_class" type="text" placeholder="Email" id="email">
-            <input class="input_class" type="text" placeholder="Pseudo" id="pseudo">
-            <input class="input_class" type="password" placeholder="Mot de passe" id="password">
-            <input class="input_class" type="password" placeholder="Confirmer mot de passe" id="password_confirm">
+        <form action="action_register.php" id="login" method="POST">
+            <input class="input_class" type="text" name="email" placeholder="Email" id="email">
+            <input class="input_class" type="text" name="username" placeholder="Username" id="pseudo">
+            <input class="input_class" type="password" name="password" placeholder="Mot de passe" id="password">
+            <input class="input_class" type="password" name="password" placeholder="Confirmer mot de passe" id="password_confirm">
+            <button id="button_login" type="submit" name="register" value="register">INSCRIPTION</button>
         </form>
-
-        <button id="button_login">Connexion</button>
-
     </section>
 
     <?php require('./view/footer.inc.php'); ?>

@@ -16,7 +16,7 @@
 
 <body>
     <?php require('./view/header.inc.php'); ?>
-    
+
     <section class="titre_background register_background">
         <section id="titre_page">
             <h1 class="h1_page">CONNEXION</h1>
@@ -25,13 +25,13 @@
 
     <section class="content_login">
 
-        <form id="login">
+        <form action="" id="login" method="POST">
+            <input class="input_class" type="text" placeholder="Email" id="email" required>
+            <input class="input_class" type="password" placeholder="Mot de passe" id="password" required>
 
-            <input class="input_class" type="text" placeholder="Email" id="email">
-            <input class="input_class" type="password" placeholder="Mot de passe" id="password">
+            <button type="submit" id="button_login" value="LOGIN">Connexion</button>
+            <? ('./action_register.php') ?>
         </form>
-
-        <button id="button_login">Connexion</button>
 
     </section>
 
