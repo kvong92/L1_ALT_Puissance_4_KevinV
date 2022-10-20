@@ -29,8 +29,7 @@
             <input class="input_class" name="email" type="text" placeholder="Email" id="email" required>
             <input class="input_class" name="password" type="password" placeholder="Mot de passe" id="password" required>
 
-            <button type="submit" id="button_login">Connexion</button>
-            <? ('./action_register.php') ?>
+            <button type="submit" id="button_login" action="./action_register.php">Connexion</button>
         </form>
 
     </section>

@@ -1,6 +1,6 @@
-<?php
-session_start();
-require_once './includes/database.inc.php';
+<?php 
+require_once('./includes/init.php');
+
 
 if (isset($_POST['register'])) 
 {
