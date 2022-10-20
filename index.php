@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class=header_main>
+    <!-- <header class=header_main>
         <section class="menu_nav">
 
             <div class="power_memory">
@@ -44,8 +44,20 @@
                 <button id="button_jouer">JOUER !</button>
             </a>
         </section>
-    </header>
+    </header> -->
+    
+    <?php require('./view/header.inc.php'); ?>
+    <section class="hero_header">
+        <section id="titre_main">
+            <h2 id="title_h2">Bienvenue dans notre studio</h2>
 
+            <p id="text_main">Venez challenger les cerveaux les plus agiles</p>
+
+            <a href="./memory.php">
+                <button id="button_jouer">JOUER !</button>
+            </a>
+        </section>
+    </section>
 
     <!-- 1er container : 3 images +  3 textes -->
     <section class="content_main">

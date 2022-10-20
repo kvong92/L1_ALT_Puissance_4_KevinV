@@ -31,7 +31,7 @@
             <input class="input_class" type="text" name="email" placeholder="Email" id="email">
             <input class="input_class" type="text" name="username" placeholder="Username" id="pseudo">
             <input class="input_class" type="password" name="password" placeholder="Mot de passe" id="password">
-            <input class="input_class" type="password" name="password" placeholder="Confirmer mot de passe" id="password_confirm">
+            <input class="input_class" type="password" name="confirm_password" placeholder="Confirmer mot de passe" id="password_confirm">
             <button id="button_login" type="submit" name="register" value="register">INSCRIPTION</button>
         </form>
     </section>
