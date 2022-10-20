@@ -1,10 +1,3 @@
-<?php
-
-session_start();
-if ()
-
-?>
-
 <header class=header_page>
   <section class="menu_nav">
     <div class="power_memory">The Power of Memory</div>
