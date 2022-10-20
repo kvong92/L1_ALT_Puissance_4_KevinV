@@ -28,16 +28,21 @@ body {
 
 nav {
     display: flex;
-    column-gap: 30px;
+    column-gap: 20px;
+    align-items: center;
 }
 
 .menu_nav a {
     text-decoration: none;
     color: #ffffff;
+    font-size: 0.9em;
 }
 
 .power_memory {
     font-size: 1.5em;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
 }
 
 h1 {

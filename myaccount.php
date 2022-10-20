@@ -1,3 +1,4 @@
+<?php require('./includes/init.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
