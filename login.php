@@ -25,11 +25,11 @@
 
     <section class="content_login">
 
-        <form action="" id="login" method="POST">
-            <input class="input_class" type="text" placeholder="Email" id="email" required>
-            <input class="input_class" type="password" placeholder="Mot de passe" id="password" required>
+        <form action="action_login.php" id="login" method="POST">
+            <input class="input_class" name="email" type="text" placeholder="Email" id="email" required>
+            <input class="input_class" name="password" type="password" placeholder="Mot de passe" id="password" required>
 
-            <button type="submit" id="button_login" value="LOGIN">Connexion</button>
+            <button type="submit" id="button_login">Connexion</button>
             <? ('./action_register.php') ?>
         </form>
 

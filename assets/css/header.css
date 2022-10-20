@@ -3,8 +3,7 @@ body {
     padding: 0px !important;
 }
 
-header.header_main {
-    /* background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_1.jpg"), no-repeat center; */
+/* .hero_header {
     background: linear-gradient(rgba(15, 15, 46, 0.8), rgba(15, 15, 46, 0.8)), url("../image/header_hero_2.jpg"), no-repeat center;
     background-position: center;
     overflow: hidden;
@@ -13,9 +12,9 @@ header.header_main {
     background-size: cover;
     text-align: center;
     padding: 2em 4em 2em 4em;
-}
+} */
 
-header.header_page {
+.header_page {
     background-color: #0F0F2E;
     text-align: center;
     padding: 2em 4em 2em 4em;
@@ -50,17 +49,6 @@ h2 {
     color: #ffffff;
     font-size: 6em;
     margin-bottom: 0;
-}
-
-#titre_main {
-    margin-right: 10%;
-    margin-left: 10%;
-    line-height: 120px;
-}
-
-#text_main {
-    font-size: 1.5em;
-    margin-top: 3%;
 }
 
 #button_jouer {
