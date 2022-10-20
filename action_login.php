@@ -1,39 +1,36 @@
-<?php
-session_start();
-require_once './includes/database.inc.php';
+<?php 
+require_once('./includes/init.php');
 
 if (isset($_POST['email']) && isset($_POST['password']))
 {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $check = $conn->prepare('SELECT username, email, user_password FROM users WHERE email = ?');
-    $check->execute(array($email));
-    $data = $check->fetch();
+    $check = $conn->prepare("SELECT id, username, email, user_password FROM users WHERE email='$email'");
+    $check->execute();
+    $data = $check->fetchALL();
     $row = $check->rowCount();
 
     if ($row == 1)
     {
-    if (filter_var($email, FILTER_VALIDATE_EMAIL))
-    {
-        // $password = hash('sha256', $password);
-        $password = $_POST['$password'];
-        if ($data['password'] === $password)
+        if (filter_var($email, FILTER_VALIDATE_EMAIL))
         {
-            $_SESSION['user'] = $data['email'];
-            die("ALL GOOD");
+        // $password = hash('sha256', $password)
+           
+            if ($data[0]['user_password'] === $password)
+                $_SESSION['user_id'] = $data[0]['id'];
+            else
+                echo "<script type='text/javascript'>alert('Wrong password !');document.location='./login.php'</script>";
+                // header('Location:index.php?login_err=password');
         }
         else
-            header('Location:index.php?login_err=password');
+            echo "<script type='text/javascript'>alert('Wrong Email !');document.location='./login.php'</script>";
+            // header('Location:index.php?login_err=email');
     }
     else
-        header('Location:index.php?login_err=email');
-    }
-    else
-        header('Location:index.php?login_err=already');
+        echo "<script type='text/javascript'>alert('Wrong User !');document.location='./login.php'</script>";
+        // header('Location:index.php?login_err=already');
 }
-else
+// else
     header('Location:index.php');
-
-
 ?>
