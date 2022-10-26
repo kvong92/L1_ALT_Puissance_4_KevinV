@@ -171,8 +171,11 @@ INSERT INTO game (game_name) VALUES
 --                                                                               --
 -- ----------------------------------------------------------------------------- --
 
-SELECT game_name
-FROM game
+SELECT g.game_name, u.username, s.difficulty, s.score
+FROM score s
+INNER JOIN game g ON g.id=s.gameID
+INNER JOIN users u ON u.id=s.userID
+ORDER BY u.username ASC, s.difficulty ASC, s.score DESC
 
 -- ----------------------------------------------------------------------------- --
 --                                                                               --
@@ -180,3 +183,11 @@ FROM game
 --                                                                               --
 -- ----------------------------------------------------------------------------- --
 
+SELECT g.game_name, u.username, s.difficulty, s.score
+FROM score s
+INNER JOIN game g ON g.id=s.gameID
+INNER JOIN users u ON u.id=s.userID
+ORDER BY u.username ASC, s.difficulty ASC, s.score DESC
+WHERE u.username = @username
+WHERE s.difficulty = @difficulty
+WHERE s.score = @score
