@@ -1,0 +1,17 @@
+.logout_message {
+    font-size: 2em;
+    text-align: center;
+}
+
+.logout_message a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.logout_message a:hover {
+    color: #EC9222;
+}
+
+.logout {
+    margin-bottom: 60px;
+}
