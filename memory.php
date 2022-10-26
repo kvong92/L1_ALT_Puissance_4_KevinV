@@ -3,7 +3,7 @@ $stmt = $conn->prepare("SELECT * FROM game");
 $stmt->execute();
 $data = $stmt->fetch();
 // $getID = $data;
-var_dump($data);
+// var_dump($data);
 ?>
 
 <!DOCTYPE html>
@@ -38,28 +38,23 @@ var_dump($data);
   <h2 id="h2_difficulte">DIFFICULTÉ</h2>
 
   <section class="choose_difficulty">
-    <a href="memory.php">
-      <button class="button_difficulty">Facile</button>
-    </a>
-    <a href="#">
-      <button class="button_difficulty">Intermédiaire</button>
-
-    </a>
-
-    <a href="#">
-      <button class="button_difficulty">Expert</button>
-    </a>
-
-    <a href="#">
-      <button class="button_difficulty">Impossible</button>
-    </a>
+    <div class="difficulty_div">
+      <input type="submit" class="button_difficulty" name="facile" id="facile">Facile</button>
+      <button class="button_difficulty" name="intermediaire" id="intermediaire">Intermédiaire</button>
+      <button class="button_difficulty" name="expert" id="expert">Expert</button>
+      <button class="button_difficulty" name="impossible" id="impossible">Impossible</button>
+    </div>
+    <div id="separator">
+      <img src="./assets/image/separator-orange.png" alt="texte separateur">
+    </div>
+    <div class="start_div">
+      <button class="button_start" name="start" id="start">Lancer</button>
+    </div>
   </section>
 
-  <div id="separator">
-    <img src="./assets/image/separator-orange.png" alt="texte separateur">
-  </div>
-
   <?php
+
+
   if (isset($getID)) {
   ?>
 
@@ -107,10 +102,6 @@ var_dump($data);
           </tr>
         </tbody>
       </table>
-
-    <?php
-  }
-    ?>
 
     <div class="chat_container">
       <div class="title_chat_block">
@@ -174,6 +165,9 @@ var_dump($data);
         </div>
       </div>
     </div>
+    <?php
+  }
+    ?>
     </section>
 
     <?php require_once('./view/footer.inc.php'); ?>
