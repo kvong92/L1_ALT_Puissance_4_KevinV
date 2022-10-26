@@ -31,4 +31,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     // header('Location:index.php?login_err=already');
 }
 // else
-header('Location:index.php');
+// echo "<script type='text/javascript'>alert("{$_SESSION['username']}");</script>";document.location='./index.php'</script>";
+// header('Location:index.php');
+echo "<script type='text/javascript'>alert('Bienvenue {$_SESSION['username']}');document.location='./index.php';</script>";

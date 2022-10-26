@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INSCRIPTION | THE POWER OF MEMORY</title>
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/footer.css">
@@ -27,7 +27,7 @@
 
     <section class="content_register">
 
-        <form action="action_register.php" id="login" method="POST">
+        <form action="./actions/action_register.php" id="login" method="POST">
             <input class="input_class" type="text" name="email" placeholder="Email" id="email">
             <input class="input_class" type="text" name="username" placeholder="Username" id="pseudo">
             <input class="input_class" type="password" name="password" placeholder="Mot de passe" id="password">
