@@ -1,5 +1,5 @@
 <?php
-require('./includes/init.php');
+require_once('./includes/init.php');
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ require('./includes/init.php');
 
 <body>
     <section class="logout">
-        <?php require('./view/header.inc.php'); ?>
+        <?php require_once('./view/header.inc.php'); ?>
         <section class="titre_background register_background">
             <section id="titre_page">
                 <h2 class="h2_page">DECONNEXION</h2>
@@ -34,7 +34,7 @@ require('./includes/init.php');
     </section>
 
     <?php
-    require('./view/footer.inc.php');
+    require_once('./view/footer.inc.php');
     session_unset();
     session_destroy();
     ?>

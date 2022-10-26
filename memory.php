@@ -1,4 +1,10 @@
-<?php require('./includes/init.php'); ?>
+<?php require_once('./includes/init.php');
+$stmt = $conn->prepare("SELECT * FROM game");
+$stmt->execute();
+$data = $stmt->fetch();
+// $getID = $data;
+var_dump($data);
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -7,7 +13,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Memory Game</title>
   <!-- Link to style.css  background color -->
   <link rel="stylesheet" href="assets/css/styles.css">
   <!-- Link to memory.css -->
@@ -20,7 +26,7 @@
 </head>
 
 <body>
-  <?php require('./view/header.inc.php'); ?>
+  <?php require_once('./view/header.inc.php'); ?>
 
   <section class="titre_background memory_background">
     <section id="titre_page">
@@ -32,7 +38,7 @@
   <h2 id="h2_difficulte">DIFFICULTÉ</h2>
 
   <section class="choose_difficulty">
-    <a href="#">
+    <a href="memory.php">
       <button class="button_difficulty">Facile</button>
     </a>
     <a href="#">
@@ -53,50 +59,58 @@
     <img src="./assets/image/separator-orange.png" alt="texte separateur">
   </div>
 
-  <section class="memory_game_container">
-    <!-- Affichage tableau 5x5 memory game grid -->
-    <table id="table_memory_5x5">
-      <tbody>
-        <tr class="table_row">
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-        </tr>
-        <tr class="table_row">
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-        </tr>
+  <?php
+  if (isset($getID)) {
+  ?>
 
-        <tr class="table_row">
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-        </tr>
+    <section class="memory_game_container">
+      <!-- Affichage tableau 5x5 memory game grid -->
+      <table id="table_memory_5x5">
+        <tbody>
+          <tr class="table_row">
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+          </tr>
+          <tr class="table_row">
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+          </tr>
 
-        <tr class="table_row">
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-        </tr>
+          <tr class="table_row">
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+          </tr>
 
-        <tr class="table_row">
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-          <td class="table_case"></td>
-        </tr>
-      </tbody>
-    </table>
+          <tr class="table_row">
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+          </tr>
+
+          <tr class="table_row">
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+            <td class="table_case"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <?php
+  }
+    ?>
 
     <div class="chat_container">
       <div class="title_chat_block">
@@ -160,9 +174,9 @@
         </div>
       </div>
     </div>
-  </section>
+    </section>
 
-  <?php require('./view/footer.inc.php'); ?>
+    <?php require_once('./view/footer.inc.php'); ?>
 </body>
 
 </html>

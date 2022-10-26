@@ -1,4 +1,4 @@
-<?php require('./includes/init.php'); ?>
+<?php require_once('./includes/init.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <?php require('./view/header.inc.php'); ?>
+    <?php require_once('./view/header.inc.php'); ?>
 
     <section class="titre_background register_background">
         <section id="titre_page">
@@ -36,7 +36,7 @@
         </form>
     </section>
 
-    <?php require('./view/footer.inc.php'); ?>
+    <?php require_once('./view/footer.inc.php'); ?>
 
 </body>
 

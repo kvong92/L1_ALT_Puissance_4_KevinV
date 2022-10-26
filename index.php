@@ -1,4 +1,4 @@
-<?php require('./includes/init.php'); ?>
+<?php require_once('./includes/init.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,7 @@
             </a>
         </section>
     </header> -->
-    <?php require('./view/header.inc.php'); 
+    <?php require_once('./view/header.inc.php'); 
         // var_dump($_SESSION['user_id']);
     ?>
     <section class="hero_header">
@@ -187,7 +187,7 @@
     </section>
 
     
-    <?php require('./view/footer.inc.php'); ?>
+    <?php require_once('./view/footer.inc.php'); ?>
     <script src="./assets/js/index.js"></script>
 </body>
 

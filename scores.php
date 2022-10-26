@@ -1,4 +1,6 @@
-<?php require('./includes/init.php'); ?>
+<?php
+require_once('./includes/init.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +19,7 @@
 </head>
 
 <body>
-    <?php require('./view/header.inc.php'); ?>
+    <?php require_once('./view/header.inc.php'); ?>
 
     <section class="titre_background scores_background">
         <section id="titre_page">
@@ -25,9 +27,9 @@
         </section>
     </section>
 
+
     <section class="content_scores">
         <table class="tableau-style">
-
             <thead>
                 <tr>
                     <td>Nom du jeu</td>
@@ -38,42 +40,40 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="color-2">
-                    <td>Memory Card</td>
-                    <td>utilisateur 1</td>
-                    <td>expert</td>
-                    <td>S</td>
-                    <td>11/10/2022</td>
-                </tr>
-                <tr class="color-1">
-                    <td>Memory Card</td>
-                    <td>utilisateur 2</td>
-                    <td>impossible</td>
-                    <td>S</td>
-                    <td>09/10/2022</td>
-                </tr>
-                <tr class="color-2">
-                    <td>Memory Card</td>
-                    <td>utilisateur 3</td>
-                    <td>intermédiaire</td>
-                    <td>S</td>
-                    <td>01/10/2022</td>
-                </tr>
-                <tr class="color-1">
-                    <td>Memory Card</td>
-                    <td>utilisateur 4</td>
-                    <td>facile</td>
-                    <td>S</td>
-                    <td>23/08/2022</td>
-                </tr>
-
+                <?php
+                $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+                $stmt = $conn->prepare("SELECT g.game_name, u.username, s.difficulty, s.score, s.game_time FROM score AS s INNER JOIN game AS g ON g.id=s.gameID INNER JOIN users AS u ON u.id=s.userID ORDER BY u.username ASC, s.difficulty ASC, s.score DESC");
+                $stmt->execute();
+                $score = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $i = 0;
+                // var_dump($score[0]['username']);
+                foreach ($score as $score)
+                {
+                    if ($i % 2 == 0)
+                    {
+                    echo '<tr class="color-2"><td>' . $score['game_name'] . '</td>';
+                    echo '<td>' . $score['username'] . '</td>';
+                    echo '<td>' . $score['difficulty'] . '</td>';
+                    echo '<td>' . $score['score'] . '</td>';
+                    echo '<td>' . $score['game_time'] . '</td></tr>';
+                    }
+                    else {
+                        echo '<tr class="color-1"><td>' . $score['game_name'] . '</td>';
+                        echo '<td>' . $score['username'] . '</td>';
+                        echo '<td>' . $score['difficulty'] . '</td>';
+                        echo '<td>' . $score['score'] . '</td>';
+                        echo '<td>' . $score['game_time'] . '</td></tr>';
+                    }
+                    $i++;
+                }
+                ?>
             </tbody>
-
         </table>
 
     </section>
 
-    <?php require('./view/footer.inc.php'); ?>
+
+    <?php require_once('./view/footer.inc.php'); ?>
 </body>
 
 </html>
