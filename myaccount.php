@@ -1,4 +1,4 @@
-<?php require('./includes/init.php'); ?>
+<?php require('./includes/init.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,29 +25,32 @@
         </section>
     </section>
 
-    <section class="content_myaccount">
+    <div class="welcome">
+        <p class="welcome_message">Bienvenue, <?php echo $_SESSION['username'];?> ! </p>
+    </div>
 
+    <section class="content_myaccount">
         <section class="block_form">
             <h2 class="title_myaccount">Changer d'email</h2>
             <img src="./assets/image/separator-orange.png" alt="separator-orange">
-            <form id="form_mail">
-                <input class="input_classic" type="email" id="old_mail" name="old_user_mail" placeholder="Ancien email">
-                <input class="input_classic" type="email" id="new_mail" name="new_user_mail" placeholder="Nouveau email">
-                <input class="input_classic" type="password" id="current_password" name="current_password" placeholder="Mot de passe">
-                <input class="input_classic" type="password" id="current_password" name="current_password" placeholder="Confirner mot de passe">
+            <form action="action_myaccount.php" id="form_mail" method="POST">
+                <input class="input_classic" type="email" id="old_email" name="old_email" placeholder="Ancien email">
+                <input class="input_classic" type="email" id="new_email" name="new_email" placeholder="Nouveau email">
+                <input class="input_classic" type="password" id="email_current_password" name="email_current_password" placeholder="Mot de passe">
+                <input class="input_classic" type="password" id="email_current_password_confirm" name="email_current_password_confirm" placeholder="Confirner mot de passe">
+                <button class="button_confirmer" type="submit" form="form_mail" value="submit_email" name="submit_email">Confirmer</button>
             </form>
-            <button class="button_confirmer" type="submit" form="form_mail" value="submit">Confirmer</button>
         </section>
 
         <section class="block_form">
             <h2 class="title_myaccount">Changer de mot de passe</h2>
             <img src="./assets/image/separator-orange.png" alt="separator-orange">
-            <form id="form_password">
+            <form id="form_password" action="action_myaccount.php" method="POST">
                 <input class="input_classic" type="password" id="current_password" name="current_password" placeholder="Ancien mot de passe">
                 <input class="input_classic" type="password" id="new_password" name="new_password" placeholder="Nouveau mot de passe">
-                <input class="input_classic" type="password" id="new_password" name="new_password" placeholder="Confirner le nouveau mot de passe">
+                <input class="input_classic" type="password" id="new_password_confirm" name="new_password_confirm" placeholder="Confirner le nouveau mot de passe">
+                <button class="button_confirmer" type="submit" form="form_password" value="submit_password"  name="submit_password">Confirmer</button>
             </form>
-            <button class="button_confirmer" type="submit" form="form_password" value="submit">Confirmer</button>
         </section>
 
     </section>
