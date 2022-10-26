@@ -47,8 +47,9 @@
             </a>
         </section>
     </header> -->
-    
-    <?php require('./view/header.inc.php'); ?>
+    <?php require('./view/header.inc.php'); 
+        // var_dump($_SESSION['user_id']);
+    ?>
     <section class="hero_header">
         <section id="titre_main">
             <h2 id="title_h2">Bienvenue dans notre studio</h2>
@@ -185,7 +186,9 @@
         </section>
     </section>
 
+    
     <?php require('./view/footer.inc.php'); ?>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
