@@ -35,11 +35,11 @@ $data = $stmt->fetch();
   </section>
 
 
-  <h2 id="h2_difficulte">DIFFICULTÉ</h2>
+  <!-- <h2 id="h2_difficulte">DIFFICULTÉ</h2>
 
   <section class="choose_difficulty">
     <div class="difficulty_div">
-      <input type="submit" class="button_difficulty" name="facile" id="facile">Facile</button>
+      <button class="button_difficulty" name="facile" id="facile">Facile</button>
       <button class="button_difficulty" name="intermediaire" id="intermediaire">Intermédiaire</button>
       <button class="button_difficulty" name="expert" id="expert">Expert</button>
       <button class="button_difficulty" name="impossible" id="impossible">Impossible</button>
@@ -50,13 +50,7 @@ $data = $stmt->fetch();
     <div class="start_div">
       <button class="button_start" name="start" id="start">Lancer</button>
     </div>
-  </section>
-
-  <?php
-
-
-  if (isset($getID)) {
-  ?>
+  </section> -->
 
     <section class="memory_game_container">
       <!-- Affichage tableau 5x5 memory game grid -->
@@ -160,14 +154,12 @@ $data = $stmt->fetch();
         </div>
 
         <div class="block_msg_envoyer">
-          <textarea id="message-text" placeholder="Votre message ..."></textarea>
+          <textarea id="message_text" placeholder="Votre message ..." name="message_text"></textarea>
           <button id="button_msg_envoyer">Envoyer</button>
         </div>
       </div>
     </div>
-    <?php
-  }
-    ?>
+
     </section>
 
     <?php require_once('./view/footer.inc.php'); ?>

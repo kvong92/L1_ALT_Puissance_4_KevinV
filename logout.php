@@ -29,7 +29,7 @@ require_once('./includes/init.php');
             Vous avez bien été déconnecté. Merci pour votre visite !
         </p>
         <p class="logout_message">
-            Cliquez <a href="./index.php">ici</a> pour être rediriger vers la page d'accueil.
+            Cliquez <a href="./index.php">ici</a> pour être rediriger vers la page d'accueil dans 5 secondes.
         </p>
     </section>
 
@@ -37,6 +37,8 @@ require_once('./includes/init.php');
     require_once('./view/footer.inc.php');
     session_unset();
     session_destroy();
+
+    header("Refresh:5; url=./index.php");
     ?>
 
 </body>

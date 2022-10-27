@@ -4,6 +4,7 @@ require_once('./includes/init.php');
 if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $password_hash = hash('sha256', $password);
 
     $check = $conn->prepare("SELECT id, username, email, user_password FROM users WHERE email='$email'");
     $check->execute();
@@ -16,7 +17,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // $password = hash('sha256', $password)
 
-            if ($data[0]['user_password'] === $password) {
+            if ($data[0]['user_password'] === $password_hash) {
                 $_SESSION['user_id'] = $data[0]['id'];
                 $_SESSION['username'] = $data[0]['username'];
                 // $_SESSION['user_password'] = $data[0]['user_password'];

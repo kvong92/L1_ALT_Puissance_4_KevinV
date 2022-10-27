@@ -52,11 +52,12 @@ if (isset($_POST['register'])) {
     //Si toutes les conditions sont valides, on insere les donnees de l'utilisateur pour la creation de son compte dans la base de donnee
     if ($valid) {
         try {
+            $password_hash = hash('sha256', $password);
             $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             // $sql = "INSERT INTO users (email, user_password, username) VALUES ('". $email ."', '". $password ."', '". $username ."')";
             // $conn->exec($sql);
             $register = $conn->prepare("INSERT INTO users (email, user_password, username) VALUES (?, ?, ?)");
-            $register->execute([$email, $password, $username]);
+            $register->execute([$email, $password_hash, $username]);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
