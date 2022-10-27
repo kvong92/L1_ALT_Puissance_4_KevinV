@@ -18,35 +18,6 @@
 </head>
 
 <body>
-    <!-- <header class=header_main>
-        <section class="menu_nav">
-
-            <div class="power_memory">
-                <a href="./">The Power of Memory</a>
-            </div>
-
-            <nav>
-                <a href="./">ACCUEIL</a>
-                <a href="./memory.php">JEU</a>
-                <a href="./scores.php">SCORES</a>
-                <a href="./contact.php">NOUS CONTACTER</a>
-                <a href="./register.php">INSCRIPTION</a>
-                <a href="./login.php">CONNEXION</a>
-                <a href="./myaccount.php">MON COMPTE</a>
-            </nav>
-
-        </section>
-
-        <section id="titre_main">
-            <h2>Bienvenue dans notre studio</h2>
-
-            <p id="text_main">Venez challenger les cerveaux les plus agiles</p>
-
-            <a href="./memory.php">
-                <button id="button_jouer">JOUER !</button>
-            </a>
-        </section>
-    </header> -->
     <?php require_once('./view/header.inc.php'); 
         // var_dump($_SESSION['user_id']);
     ?>

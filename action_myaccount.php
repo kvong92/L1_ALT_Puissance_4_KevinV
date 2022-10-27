@@ -15,13 +15,14 @@ if (!isset($user_id)) {
     header('Location:index.php');
 }
 
-
 //email FORM
 if (isset($_POST['submit_email'])) {
     $old_email = $_POST['old_email'];
     $new_email = $_POST['new_email'];
     $email_current_password = $_POST['email_current_password'];
     $email_current_password_confirm = $_POST['email_current_password_confirm'];
+    $password_hash = hash('sha256', $email_current_password);
+
     $update = true;
     // echo "old email = $old_email <br><br><br> email = $email ";
     if (!isset($old_email, $new_email, $email_current_password, $email_current_password_confirm)) {
@@ -41,7 +42,7 @@ if (isset($_POST['submit_email'])) {
         echo "<script type='text/javascript'>alert('Veuillez saisir un email valide !');document.location='./myaccount.php'</script>";
         $update = false;
     }
-    if ($email_current_password != $user_password) {
+    if ($password_hash != $user_password) {
         // echo "<br><br><br>mdp incorrect<br><br><br>";
         echo "<script type='text/javascript'>alert('Mot de passe incorrect !');document.location='./myaccount.php'</script>";
         $update = false;
@@ -69,6 +70,9 @@ if (isset($_POST['submit_password'])) {
     $current_password = $_POST['current_password'];
     $new_password = $_POST['new_password'];
     $new_password_confirm = $_POST['new_password_confirm'];
+    $current_password_hash = hash('sha256', $current_password);
+    $new_password_hash = hash('sha256', $new_password);
+
     $update = true;
     if (!isset($current_password, $new_password, $new_password_confirm)) {
         echo "<script type='text/javascript'>alert('Veuillez remplir tous les champs !');document.location='./myaccount.php'</script>";
