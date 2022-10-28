@@ -85,9 +85,9 @@ $scoreCount = $dataScore->rowCount();
 // echo $scoreCount;
 
 // count player connected
-$dataUsers = $conn->prepare("SELECT * FROM score WHERE 1");
-$dataUsers->execute();
-$usersCount = $dataScore->rowCount();
+$dataUsersConnected = $conn->prepare("SELECT * FROM users WHERE last_seen >= NOW() - INTERVAL 1 DAY");
+$dataUsersConnected->execute();
+$usersConnected = $dataUsersConnected->rowCount();
 // echo $usersCount;
 
 // get best time memory game
@@ -101,9 +101,9 @@ $bestScoreValue = $bestScore[0]['MIN(score.score)'];
 // echo $date;
 
 // count nb users in database
-$dataScore = $conn->prepare("SELECT * FROM score WHERE 1");
-$dataScore->execute();
-$scoreCount = $dataScore->rowCount();
+$dataUsers = $conn->prepare("SELECT * FROM score WHERE 1");
+$dataUsers->execute();
+$usersCount = $dataUsers->rowCount();
 ?>
 
         <!-- 2e container : image +  4 block : stats du jeu -->
@@ -122,7 +122,7 @@ $scoreCount = $dataScore->rowCount();
                     </div>
                     <!-- Block 2.2 : Joueurs connectés vert -->
                     <div class="square_2">
-                        <p class="square_nb">1020</p>
+                        <p class="square_nb"><?= $usersConnected ?> </p>
                         <p class="square_text">Joueurs connectés</p>
                     </div>
                 </section>

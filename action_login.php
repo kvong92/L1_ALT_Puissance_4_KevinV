@@ -14,6 +14,9 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     // var_dump($data[0]['username']);
     $date = date('Y-m-d h:i:s');
 
+    $update = $conn->prepare("UPDATE users SET last_seen='$date' WHERE email='$email'");
+    $update->execute();
+
     if ($row == 1) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // $password = hash('sha256', $password)
@@ -21,7 +24,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             if ($data[0]['user_password'] === $password_hash) {
                 $_SESSION['user_id'] = $data[0]['id'];
                 $_SESSION['username'] = $data[0]['username'];
-                // $_SESSION['last_seen'] = $date..000000; 
                 // $_SESSION['user_password'] = $data[0]['user_password'];
             } else
                 echo "<script type='text/javascript'>alert('Wrong password !');document.location='./login.php'</script>";
