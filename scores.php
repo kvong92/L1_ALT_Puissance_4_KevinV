@@ -30,7 +30,7 @@ require_once('./includes/init.php');
 
     <section class="content_scores">
         <table class="tableau-style">
-            <thead>
+            <tbody>
                 <tr>
                     <td>Nom du jeu</td>
                     <td>Pseudo</td>
@@ -38,8 +38,6 @@ require_once('./includes/init.php');
                     <td>Score</td>
                     <td>Date</td>
                 </tr>
-            </thead>
-            <tbody>
                 <?php
                 $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
                 $stmt = $conn->prepare("SELECT g.game_name, u.username, s.difficulty, s.score, s.game_time FROM score AS s INNER JOIN game AS g ON g.id=s.gameID INNER JOIN users AS u ON u.id=s.userID ORDER BY u.username ASC, s.difficulty ASC, s.score DESC");

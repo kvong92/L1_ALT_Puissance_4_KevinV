@@ -5,7 +5,7 @@ $user_id = $_SESSION['user_id'];
 // $user_password = $_SESSION['user_password'];
 $stmt = $conn->prepare("SELECT user_password, email FROM users WHERE id = '$user_id'");
 $stmt->execute();
-$data = $stmt->fetchALL();
+$data = $stmt->fetchAll();
 $row = $stmt->rowCount();
 $user_password = $data[0]['user_password'];
 $email = $data[0]['email'];

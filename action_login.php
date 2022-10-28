@@ -12,6 +12,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $row = $check->rowCount();
     // var_dump($data[0]);
     // var_dump($data[0]['username']);
+    $date = date('Y-m-d h:i:s');
 
     if ($row == 1) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -20,6 +21,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             if ($data[0]['user_password'] === $password_hash) {
                 $_SESSION['user_id'] = $data[0]['id'];
                 $_SESSION['username'] = $data[0]['username'];
+                // $_SESSION['last_seen'] = $date..000000; 
                 // $_SESSION['user_password'] = $data[0]['user_password'];
             } else
                 echo "<script type='text/javascript'>alert('Wrong password !');document.location='./login.php'</script>";

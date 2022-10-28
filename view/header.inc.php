@@ -1,6 +1,6 @@
 <header class=header_page>
   <section class="menu_nav">
-    <div class="power_memory">The Power of Memory</div>
+    <div class="power_memory">  <a href="./index.php">The Power of Memory</a></div>
     <nav>
       <a href="./">ACCUEIL</a>
       <a href="./scores.php">SCORES</a>

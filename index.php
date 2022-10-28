@@ -1,4 +1,5 @@
-<?php require_once('./includes/init.php'); ?>
+<?php require_once('./includes/init.php');?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,18 +77,47 @@
             </section>
         </section>
 
+<?php
+// count nb game played
+$dataScore = $conn->prepare("SELECT * FROM score WHERE 1");
+$dataScore->execute();
+$scoreCount = $dataScore->rowCount();
+// echo $scoreCount;
+
+// count player connected
+$dataUsers = $conn->prepare("SELECT * FROM score WHERE 1");
+$dataUsers->execute();
+$usersCount = $dataScore->rowCount();
+// echo $usersCount;
+
+// get best time memory game
+$dataBestScore = $conn->prepare("SELECT MIN(score.score) FROM score");
+$dataBestScore->execute();
+$bestScore = $dataBestScore->fetchAll();
+$bestScoreValue = $bestScore[0]['MIN(score.score)'];
+// echo $bestScoreValue;
+// $date = new DateTime();
+// $date = $date->format("y:m:d h:i:s");
+// echo $date;
+
+// count nb users in database
+$dataScore = $conn->prepare("SELECT * FROM score WHERE 1");
+$dataScore->execute();
+$scoreCount = $dataScore->rowCount();
+?>
+
         <!-- 2e container : image +  4 block : stats du jeu -->
         <section id="img_block">
             <!-- Block 1 : image -->
             <div>
                 <img src="https://placekitten.com/700/370" alt="img_450x380">
             </div>
-            <!-- Block 2 : 2 block stats bleu/vert-->
+            <!-- Block 2 : 2 block stats bleu/,vert-->
             <section id="block_four_images">
                 <!-- Block 2.1 : Parties jouées bleu -->
                 <section class="grid_stats">
                     <div class="square_1">
-                        <p class="square_nb">310</p>
+                        <p class="square_nb"><?= $scoreCount ?></p>
                         <p class="square_text">Parties jouées</p>
                     </div>
                     <!-- Block 2.2 : Joueurs connectés vert -->
@@ -100,12 +130,12 @@
                 <section class="grid_stats">
                     <!-- Block 3.1 : Temps record violet -->
                     <div class="square_3">
-                        <p class="square_nb">10 sec</p>
+                        <p class="square_nb"><?= $bestScoreValue ?> sec</p>
                         <p class="square_text">Temps record</p>
                     </div>
                     <!-- Block 3.2 : Joueurs inscrits orange -->
                     <div class="square_4">
-                        <p class="square_nb">21 300</p>
+                        <p class="square_nb"><?= $usersCount ?></p>
                         <p class="square_text">Joueurs inscrits</p>
                     </div>
                 </section>
