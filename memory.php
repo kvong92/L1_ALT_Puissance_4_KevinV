@@ -52,50 +52,50 @@ $data = $stmt->fetch();
     </div>
   </section> -->
 
-    <section class="memory_game_container">
-      <!-- Affichage tableau 5x5 memory game grid -->
-      <table id="table_memory_5x5">
-        <tbody>
-          <tr class="table_row">
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-          </tr>
-          <tr class="table_row">
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-          </tr>
+  <section class="memory_game_container">
+    <!-- Affichage tableau 5x5 memory game grid -->
+    <table id="table_memory_5x5">
+      <tbody>
+        <tr class="table_row">
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+        </tr>
+        <tr class="table_row">
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+        </tr>
 
-          <tr class="table_row">
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-          </tr>
+        <tr class="table_row">
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+        </tr>
 
-          <tr class="table_row">
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-          </tr>
+        <tr class="table_row">
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+        </tr>
 
-          <tr class="table_row">
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-            <td class="table_case"></td>
-          </tr>
-        </tbody>
-      </table>
+        <tr class="table_row">
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+          <td class="table_case"></td>
+        </tr>
+      </tbody>
+    </table>
 
     <div class="chat_container">
       <div class="title_chat_block">
@@ -105,19 +105,15 @@ $data = $stmt->fetch();
 
       <div class="chat_box">
 
-        <!-- <div class="msg_name_me">Moi</div> -->
+        <!-- <div class="msg_name_me">Moi</div>
         <div class="block_msg_me">
           <div div class="msg_time">
             <div class="msg_name_me">Moi</div>
             <div class="msg_from_me">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, neque! Rem voluptates odio obcaecati consequatur!</div>
             <div class="msg_time_me">Aujourd'hui à 11h12</div>
           </div>
-          <!-- <div class="msg_img_profil">
-            <img class="img_items" src="https://placekitten.com/40/40" alt="">
-          </div> -->
         </div>
 
-        <!-- <div class="msg_name_them">Arthur</div> -->
         <div class="block_msg_them">
           <div class="msg_img_profil">
             <img class="img_items" src="https://placekitten.com/40/40" alt="">
@@ -129,19 +125,14 @@ $data = $stmt->fetch();
           </div>
         </div>
 
-        <!-- <div class="msg_name_me">Moi</div> -->
         <div class="block_msg_me">
           <div div class="msg_time">
             <div class="msg_name_me">Moi</div>
             <div class="msg_from_me">Lorem, ipsum dolor.</div>
             <div class="msg_time_me">Aujourd'hui à 11h12</div>
           </div>
-          <!-- <div class="msg_img_profil">
-            <img class="img_items" src="https://placekitten.com/40/40" alt="">
-          </div> -->
         </div>
 
-        <!-- <div class="msg_name_them">Arthur</div> -->
         <div class="block_msg_them">
           <div class="msg_img_profil">
             <img class="img_items" src="https://placekitten.com/40/40" alt="">
@@ -157,12 +148,61 @@ $data = $stmt->fetch();
           <textarea id="message_text" placeholder="Votre message ..." name="message_text"></textarea>
           <button id="button_msg_envoyer">Envoyer</button>
         </div>
+      </div> -->
+
+        <div class="msg_name_me"></div>
+        <div class="block_msg_me">
+          <div div class="msg_time">
+            <div class="msg_name_me"></div>
+            <div class="msg_from_me"></div>
+            <div class="msg_time_me"></div>
+          </div>
+        </div>
+
+        <div class="block_msg_them">
+          <div class="msg_img_profil">
+            <img class="img_items" src="https://placekitten.com/40/40" alt="">
+          </div>
+          <div div class="msg_time">
+            <div class="msg_name_them"></div>
+            <div class="msg_from_them"></div>
+            <div class="msg_time_them"></div>
+          </div>
+        </div>
+
+        <div class="block_msg_me">
+          <div div class="msg_time">
+            <div class="msg_name_me"></div>
+            <div class="msg_from_me"></div>
+            <div class="msg_time_me"></div>
+          </div>
+        </div>
+
+        <div class="block_msg_them">
+          <div class="msg_img_profil">
+            <img class="img_items" src="https://placekitten.com/40/40" alt="">
+          </div>
+          <div div class="msg_time">
+            <div class="msg_name_them"></div>
+            <div class="msg_from_them"></div>
+            <div class="msg_time_them"></div>
+          </div>
+        </div>
+
+        <div class="block_msg_envoyer">
+          <form action="send_message.php" method="POST" name="inputMessage" id="formMessage">
+            <textarea class="message_text" id="message_text" placeholder="Votre message ..." name="message_text"></textarea>
+            <button class="button_msg_envoyer" id="button_msg_envoyer" name="button_msg_envoyer" onclick="addMessage()">Envoyer</button>
+          </form>
+        </div>
       </div>
+
     </div>
 
-    </section>
+  </section>
 
-    <?php require_once('./view/footer.inc.php'); ?>
+  <?php require_once('./view/footer.inc.php'); ?>
+  <script src="./assets/js/memory.js"></script>
 </body>
 
 </html>
